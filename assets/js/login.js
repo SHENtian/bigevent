@@ -57,7 +57,7 @@ $(function() {
             method: "POST",
             //快速获取表单中数据
             data: $(this).serialize(),
-            success: (res) => {
+            success: function(res) {
                 if (res.status !== 0) {
                     return layer.msg('登录失败')
                 }
